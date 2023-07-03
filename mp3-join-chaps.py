@@ -36,8 +36,7 @@ def main():
                         help="input mp3 files")
     parser.add_argument('-o', metavar="OUT.mp3", default="joined.mp3",
                         help="output mp3 file name (default: `%(default)s`)")
-    parser.add_argument('-e', metavar='FMT', default='timecodes',
-                        nargs='?', const='timecodes',
+    parser.add_argument('-e', metavar='FMT', nargs='?', const='timecodes',
                         choices=['timecodes', 'cue', 'all'],
                         help="Export chapters to OUT(.chapters.txt|.cue) "
                              "according to FMT=(timecodes|cue|all)")
